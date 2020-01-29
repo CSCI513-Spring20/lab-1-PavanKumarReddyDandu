@@ -18,7 +18,7 @@ public class WorldPopulation {
 	}
 	
 	public void readInputFile(){
-		population = readPopulationFile("src\\WorldPopulation.csv");
+		population = readPopulationFile("C:\\Users\\pavan\\git\\lab-1-PavanKumarReddyDandu\\Lab1\\WorldPopulation.csv");
 	}
 	
 	public void setStrategy(SortStrategy strategy){
@@ -54,8 +54,8 @@ public class WorldPopulation {
 	
 	// Lab Exercise.  Complete this method.
 	// Delegate sorting to the strategy object
-	public void sortPopulation(SortStrategy strategy){
-		strategy.sort(population);
+	public void sortPopulation(SortStrategy method){
+		method.sort(population);
 		
 		
 	}
