@@ -18,7 +18,7 @@ public class WorldPopulation {
 	}
 	
 	public void readInputFile(){
-		population = readPopulationFile("C:\\Users\\pavan\\git\\lab-1-PavanKumarReddyDandu\\Lab1\\WorldPopulation.csv");
+		population = readPopulationFile("src\\WorldPopulation.csv");
 	}
 	
 	public void setStrategy(SortStrategy strategy){
@@ -75,14 +75,11 @@ public class WorldPopulation {
 		worldPopulation.readInputFile();
 		worldPopulation.setStrategy(select);  
 		worldPopulation.sortPopulation(select);	
-		
 		worldPopulation.readInputFile();
 		worldPopulation.setStrategy(insert);  
 		worldPopulation.sortPopulation(insert);
-		
 		worldPopulation.readInputFile();
 		worldPopulation.setStrategy(bubble);
-		
 		worldPopulation.sortPopulation(bubble);
 	}
 
